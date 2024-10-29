@@ -1,7 +1,6 @@
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
-import { link } from "fs";
 
 interface ServicesScheme {
   name: string;
