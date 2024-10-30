@@ -12,25 +12,13 @@ const services = [
   {
     name: "Programming",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores nam odio? Ducimus, ex est facere mollitia esse molestias quidem dolores velit, magnam ea sint delectus ut nesciunt dolorem eum!",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores nam odio? Ducimus, ex est facere mollitia.",
     link: "Learn more",
   },
   {
     name: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, earum rerum explicabo, facere natus reprehenderit officia dolorem eius, quia sunt. Mollitia natus quisquam quas explicabo totam impedit, delectus eos.",
-    link: "Learn more",
-  },
-  {
-    name: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, earum rerum explicabo, facere natus reprehenderit officia dolorem eius, quia sunt. Mollitia natus quisquam quas explicabo totam impedit, delectus eos.",
-    link: "Learn more",
-  },
-  {
-    name: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, earum rerum explicabo, facere natus reprehenderit officia dolorem eius, quia sunt. Mollitia natus quisquam quas explicabo totam impedit, delectus eos.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, earum rerum explicabo, facere natus reprehenderit.",
     link: "Learn more",
   },
 ];

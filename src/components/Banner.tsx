@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "../assets/avatar.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
@@ -9,22 +8,22 @@ export const Banner = () => {
   return (
     <section
       id="home"
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="min-h-[85vh] lg:min-h-[70vh] flex items-center"
     >
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
-              variants={fadeIn({ direction: "up", delay: 0.3 })}
+              variants={fadeIn({ direction: "right", delay: 0.3 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+              className="text-[55px] font-bold leading-[0.8] lg:text-[80px]"
             >
               NextGen-Solution
             </motion.h1>
             <motion.div
-              variants={fadeIn({ direction: "up", delay: 0.4 })}
+              variants={fadeIn({ direction: "right", delay: 0.4 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -35,11 +34,11 @@ export const Banner = () => {
                 className="text-accent"
                 wrapper="span"
                 repeat={Infinity}
-                sequence={["Front-end Developer", 2000, "Designer", 2000]}
+                sequence={["Developer", 2000, "Designer", 2000]}
               />
             </motion.div>
             <motion.p
-              variants={fadeIn({ direction: "up", delay: 0.5 })}
+              variants={fadeIn({ direction: "right", delay: 0.5 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -47,15 +46,14 @@ export const Banner = () => {
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
               harum cum eius iusto, aut exercitationem doloremque quasi magnam
-              animi optio id est debitis laboriosam dolore! Esse quasi ducimus
-              omnis magnam!
+              animi optio.
             </motion.p>
             <motion.div
-              variants={fadeIn({ direction: "up", delay: 0.6 })}
+              variants={fadeIn({ direction: "right", delay: 0.6 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+              className="flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">Contact me</button>
               <a href="#" className="text-gradient btn-link">
@@ -63,7 +61,7 @@ export const Banner = () => {
               </a>
             </motion.div>
             <motion.div
-              variants={fadeIn({ direction: "up", delay: 0.7 })}
+              variants={fadeIn({ direction: "right", delay: 0.7 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -78,7 +76,7 @@ export const Banner = () => {
             </motion.div>
           </div>
           <motion.div
-            variants={fadeIn({ direction: "down", delay: 0.5 })}
+            variants={fadeIn({ direction: "left", delay: 0.5 })}
             initial="hidden"
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
