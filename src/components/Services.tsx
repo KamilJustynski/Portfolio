@@ -1,6 +1,7 @@
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
+import { Link } from "react-scroll";
 
 interface ServicesScheme {
   name: string;
@@ -12,13 +13,13 @@ const services = [
   {
     name: "Programming",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores nam odio? Ducimus, ex est facere mollitia.",
+      "I create modern and responsive web applications, using technologies such as React, Next, TailwindCSS. My projects are always tailored to the client's needs, and I treat each order individually.",
     link: "Learn more",
   },
   {
     name: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, earum rerum explicabo, facere natus reprehenderit.",
+      "In the UI/UX design process, I focus on the user. I understand how important it is for sites to be visually appealing yet functional. I conduct analysis and research that allows me to create user-friendly interfaces.",
     link: "Learn more",
   },
 ];
@@ -37,10 +38,13 @@ export const Services = () => {
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I am a Freelance Front-end Developer with over 2 years of
-              experience.
+              Front-end Developer <br /> and <br /> UI/UX Designer
             </h3>
-            <button className="btn btn-sm">See my projects</button>
+            <button className="btn btn-sm">
+              <Link to="work" smooth={true}>
+                See my projects
+              </Link>
+            </button>
           </motion.div>
           <motion.div
             variants={fadeIn({ direction: "left", delay: 0.5 })}
@@ -53,7 +57,7 @@ export const Services = () => {
               {services.map((service: ServicesScheme, index: number) => {
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                    className="border-b border-white/20 h-[150px] mb-[38px] flex"
                     key={index}
                   >
                     <div className="max-w-[476px]">

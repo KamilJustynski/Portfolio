@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import emailjs from "@emailjs/browser";
@@ -24,8 +24,8 @@ export const Contact: React.FC = () => {
 
     emailjs
       .send(serviceID, templateID, templateParams, publicKEY)
-      .then((response: any) => {
-        console.log("Email sent success!", response);
+      .then(() => {
+        alert("Email sent success!");
         setName("");
         setEmail("");
         setMessage("");
@@ -62,14 +62,14 @@ export const Contact: React.FC = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-10 p-6 items-start"
           >
             <input
               type="text"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Your Name"
+              placeholder="* Your Name"
               required
             />
             <input
@@ -77,12 +77,12 @@ export const Contact: React.FC = () => {
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email"
+              placeholder="* Your email"
               required
             />
             <textarea
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
-              placeholder="Your message"
+              placeholder="* Your message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -90,6 +90,7 @@ export const Contact: React.FC = () => {
             <button type="submit" className="btn btn-lg">
               Send message
             </button>
+            <p className="text-gradient ml-2">* Required fields</p>
           </motion.form>
         </div>
       </div>

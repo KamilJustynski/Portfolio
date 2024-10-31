@@ -3,6 +3,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
+import { Link } from "react-scroll";
+import { GITHUB_LINK, LINKEDIN_LINK } from "../helpers";
 
 export const Banner = () => {
   return (
@@ -44,9 +46,9 @@ export const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              harum cum eius iusto, aut exercitationem doloremque quasi magnam
-              animi optio.
+              Creating interactive and aesthetic websites is my passion. I
+              design and implement solutions that combine functionality with
+              attractive design.
             </motion.p>
             <motion.div
               variants={fadeIn({ direction: "right", delay: 0.6 })}
@@ -55,10 +57,14 @@ export const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
+              <button className="btn btn-lg">
+                <Link to="contact" smooth={true}>
+                  Contact me
+                </Link>
+              </button>
+              <Link to="work" smooth={true} className="text-gradient btn-link">
                 Portfolio
-              </a>
+              </Link>
             </motion.div>
             <motion.div
               variants={fadeIn({ direction: "right", delay: 0.7 })}
@@ -67,10 +73,10 @@ export const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a rel="noreferrer" target="_blank" href={GITHUB_LINK}>
                 <FaGithub />
               </a>
-              <a href="#">
+              <a rel="noreferrer" target="_blank" href={LINKEDIN_LINK}>
                 <FaLinkedin />
               </a>
             </motion.div>

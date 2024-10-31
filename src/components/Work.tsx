@@ -1,9 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import img1 from "../assets/portfolio-img1.png";
 import img2 from "../assets/portfolio-img2.png";
 import img3 from "../assets/portfolio-img3.png";
+import { GITHUB_LINK } from "../helpers";
 
 export const Work = () => {
   return (
@@ -26,7 +26,9 @@ export const Work = () => {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
                 dolorem, exercitationem sapiente iusto cumque vero
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <a href={GITHUB_LINK} rel="noreferrer" target="_blank">
+                <button className="btn btn-sm">View all projects</button>
+              </a>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>

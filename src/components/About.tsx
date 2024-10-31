@@ -31,10 +31,9 @@ export const About = () => {
               experience.
             </h3>
             <p className="mb-6">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias numquam beatae ex soluta aliquam ipsa neque delectus,
-              itaque culpa est, blanditiis dolore animi vero voluptatibus rerum
-              repellendus aspernatur nam veniam?
+              I am a freelancer specializing in customized website development
+              for each client. My approach to work is based on close cooperation
+              and understanding of the vision that each of my clients has.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -64,12 +63,6 @@ export const About = () => {
                   Clients
                 </div>
               </div>
-            </div>
-            <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact</button>
-              <a href="#" className="text-gradient btn-link">
-                Portfolio
-              </a>
             </div>
           </motion.div>
         </div>
