@@ -23,7 +23,7 @@ export const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 justify-center items-center mt-14"
+            className="flex-1 justify-center items-center mt-8"
           >
             <h2 className="h2 text-accent">About us</h2>
             <h3 className="h3 mb-4">

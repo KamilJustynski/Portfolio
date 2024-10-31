@@ -38,7 +38,7 @@ export const Services = () => {
           >
             <h2 className="h2 text-accent mb-3">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-5">
-              Front-end Developer <br /> and <br /> UI/UX Designer
+              Front-end Developer and UI/UX Designer
             </h3>
             <button className="btn btn-sm">
               <Link to="work" smooth={true}>

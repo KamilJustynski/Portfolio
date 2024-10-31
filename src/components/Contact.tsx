@@ -38,7 +38,7 @@ export const Contact: React.FC = () => {
 
   return (
       <section id="contact" className="section min-h-screen flex items-center justify-center">
-        <div className="container mx-auto max-w-6xl mb-32">
+        <div className="container mx-auto max-w-6xl mb-52">
           <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-x-12">
             <motion.div
                 variants={fadeIn({ direction: "right", delay: 0.3 })}
@@ -51,7 +51,7 @@ export const Contact: React.FC = () => {
                 <h4 className="text-xl uppercase text-accent font-medium tracking-wide">
                   Get in touch
                 </h4>
-                <h2 className="text-[45px] lg:text-[90px] leading-none">
+                <h2 className="hidden lg:text-[90px] lg:flex leading-none">
                   Let's work <br />
                   together!
                 </h2>
