@@ -1,10 +1,10 @@
-import Image from "../assets/avatar.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import { Link } from "react-scroll";
 import { GITHUB_LINK, LINKEDIN_LINK } from "../helpers";
+import banner from '../assets/banner.png'
 
 export const Banner = () => {
   return (
@@ -85,9 +85,9 @@ export const Banner = () => {
             variants={fadeIn({ direction: "left", delay: 0.5 })}
             initial="hidden"
             whileInView={"show"}
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
+            className="hidden lg:flex  flex-1 max-w-[320px] lg:max-w-[400px]"
           >
-            <img src={Image} alt="" />
+            <img src={banner} alt="" />
           </motion.div>
         </div>
       </div>
