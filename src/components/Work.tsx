@@ -9,21 +9,21 @@ export const Work = () => {
           id="work"
           className="section mt-16 min-h-screen flex items-center justify-center"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto mb-32">
           <div className="flex flex-col lg:flex-row gap-x-10 items-center justify-center">
             <motion.div
                 variants={fadeIn({ direction: "left", delay: 0.3 })}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="flex flex-col lg:flex-row gap-y-12 justify-between mb-10 lg:mb-0 items-center"
+                className="flex flex-col lg:flex-row gap-y-3 justify-between mb-10 lg:mb-0 items-center"
             >
               <div className="flex flex-col flex-1 text-center lg:text-left">
                 <h2 className="h2 leading-tight text-accent text-center lg:text-left">
                   My Latest <br />
                   Work
                 </h2>
-                <p className="max-w-sm mb-16 text-center lg:text-left">
+                <p className="max-w-sm mb-8 text-center lg:text-left">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
                   dolorem, exercitationem sapiente iusto cumque vero
                 </p>

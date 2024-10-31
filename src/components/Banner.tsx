@@ -13,7 +13,7 @@ export const Banner = () => {
       className="min-h-[85vh] lg:min-h-[70vh] flex items-center"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-8 mb-32 lg:mb-0 lg:flex-row lg:items-center lg:gap-x-12">
+        <div className="flex flex-col gap-y-8 mb-48 lg:mb-0 lg:flex-row lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
               variants={fadeIn({ direction: "right", delay: 0.3 })}

@@ -37,7 +37,7 @@ export const Services = () => {
             className="flex-1 lg:bg-services lg:bg-top bg-no-repeat mix-blend-lighten mb-5 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-3">What I Do.</h2>
-            <h3 className="h3 max-w-[455px] mb-12">
+            <h3 className="h3 max-w-[455px] mb-5">
               Front-end Developer <br /> and <br /> UI/UX Designer
             </h3>
             <button className="btn btn-sm">
@@ -57,7 +57,7 @@ export const Services = () => {
               {services.map((service: ServicesScheme, index: number) => {
                 return (
                   <div
-                    className="border-b border-white/20 h-auto mb-[38px] flex"
+                    className="border-b border-white/20 h-auto mb-[25px] flex"
                     key={index}
                   >
                     <div className="max-w-[476px]">
@@ -67,17 +67,6 @@ export const Services = () => {
                       <p className="font-secondary leading-tight">
                         {service.description}
                       </p>
-                    </div>
-                    <div className="flex flex-col flex-1 items-end">
-                      <a
-                        href="#"
-                        className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
-                      >
-                        <BsArrowUpRight />
-                      </a>
-                      <a href="#" className="text-gradient text-sm">
-                        {service.link}
-                      </a>
                     </div>
                   </div>
                 );

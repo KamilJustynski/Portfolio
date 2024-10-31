@@ -38,7 +38,7 @@ export const Contact: React.FC = () => {
 
   return (
       <section id="contact" className="section min-h-screen flex items-center justify-center">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-6xl mb-32">
           <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-x-12">
             <motion.div
                 variants={fadeIn({ direction: "right", delay: 0.3 })}
