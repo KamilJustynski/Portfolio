@@ -16,14 +16,14 @@ export const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-about mb-52 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            className="flex-1 bg-about hidden lg:flex mb-52 lg:mb-16 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
           ></motion.div>
           <motion.div
             variants={fadeIn({ direction: "left", delay: 0.3 })}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1"
+            className="flex-1 justify-center items-center mt-28"
           >
             <h2 className="h2 text-accent">About us</h2>
             <h3 className="h3 mb-4">
