@@ -61,7 +61,7 @@ export const Services = () => {
                     key={index}
                   >
                     <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-1 lg:mb-6">
                         {service.name}
                       </h4>
                       <p className="font-secondary leading-tight">

@@ -31,11 +31,11 @@ export const Work = () => {
                   </a>
                 </div>
               </div>
-              <a rel="noreferrer" target="_blank" href="https://www.meblimar.com/" className="group flex flex-1 relative overflow-hidden border-2 border-white/50 lg:h-[300px] mt-10 rounded-xl lg:w-[700px] max-w-[700px]">
+              <a rel="noreferrer" target="_blank" href="https://www.meblimar.com/" className="group flex flex-1 relative overflow-hidden border-2 border-white/50 lg:h-[300px] mt-5 lg:mt-10 rounded-xl lg:w-[700px] max-w-[700px]">
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 <div className="w-full h-full pb-6 justify-center flex flex-col pt-5 items-center">
                   <h2 className="h2 text-gradient">MEBLIMAR</h2>
-                  <p className="text-center max-w-[500px] px-10">Website for a custom furniture manufacturing company. Design provided by the client.</p>
+                  <p className="text-center max-w-[500px] px-10">Website for a custom furnitu`re manufacturing company. Design provided by the client.</p>
                 </div>
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-500 z-50">
                   <span className="text-gradient">Programming</span>
