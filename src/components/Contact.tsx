@@ -63,7 +63,7 @@ export const Contact: React.FC = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0.3 }}
-                className="flex-1 border rounded-2xl flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
+                className="flex-1 border rounded-2xl lg:mt-20 flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
             >
               <input
                   type="text"
