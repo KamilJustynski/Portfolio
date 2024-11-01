@@ -24,8 +24,7 @@ export const Work = () => {
                   Work
                 </h2>
                 <p className="max-w-sm mb-8 text-center lg:text-left">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  dolorem, exercitationem sapiente iusto cumque vero
+                  My last project that I did. During the creation, I focused on the graphic design provided and the client's requirements.
                 </p>
                 <div className="flex justify-center lg:justify-start">
                   <a href={GITHUB_LINK} rel="noreferrer" target="_blank">

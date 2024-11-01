@@ -25,7 +25,7 @@ export const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 justify-center items-center mt-8"
           >
-            <h2 className="h2 text-accent">About us</h2>
+            <h2 className="h2 text-accent">About me</h2>
             <h3 className="h3 mb-4">
               I am a Freelance Front-end Developer with over 2 years of
               experience.
