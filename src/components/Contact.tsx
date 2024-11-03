@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-scroll";
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState("");
@@ -66,7 +67,7 @@ export const Contact: React.FC = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 border rounded-2xl lg:mt-20 flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
+            className="flex-1 border rounded-2xl  lg:mt-20 flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
           >
             <input
               type="text"
@@ -97,6 +98,21 @@ export const Contact: React.FC = () => {
             <p className="text-gradient ml-2 mt-2">* Pola wymagane</p>
           </motion.form>
         </div>
+        <motion.div
+          variants={fadeIn({ direction: "right", delay: 0.4 })}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          <Link
+            to="info"
+            spy={true}
+            smooth={true}
+            className="flex items-center justify-center lg:justify-start text-accent underline cursor-pointer"
+          >
+            Polityka prywatności
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

@@ -31,7 +31,6 @@ export const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]"
             >
-              {/* <span className="mr-4 text-white">I am a</span> */}
               <TypeAnimation
                 className="text-accent"
                 wrapper="span"
@@ -62,7 +61,11 @@ export const Banner = () => {
                   Kontakt
                 </Link>
               </button>
-              <Link to="work" smooth={true} className="text-gradient btn-link">
+              <Link
+                to="work"
+                smooth={true}
+                className="text-gradient cursor-pointer btn-link"
+              >
                 Portfolio
               </Link>
             </motion.div>
