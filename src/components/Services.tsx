@@ -11,15 +11,15 @@ interface ServicesScheme {
 
 const services = [
   {
-    name: "Programming",
+    name: "Developer",
     description:
-      "I create modern and responsive web applications, using technologies such as React, Next, TailwindCSS. My projects are always tailored to the client's needs, and I treat each order individually.",
+      "Tworzę nowoczesne i responsywne aplikacje internetowe, wykorzystując technologie takie jak React, Next, TailwindCSS i TypeScript.",
     link: "Learn more",
   },
   {
     name: "UI/UX Design",
     description:
-      "In the UI/UX design process, I focus on the user. I understand how important it is for sites to be visually appealing yet functional. I conduct analysis and research that allows me to create user-friendly interfaces.",
+      "W procesie projektowania UI/UX skupiam się na użytkowniku. Rozumiem, jak ważne jest, aby strony były atrakcyjne wizualnie, a jednocześnie funkcjonalne.",
     link: "Learn more",
   },
 ];
@@ -36,13 +36,14 @@ export const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:bg-services lg:bg-top bg-no-repeat mix-blend-lighten mb-5 lg:mb-0"
           >
-            <h2 className="h2 text-accent mb-3">What I Do.</h2>
+            <h2 className="h2 text-accent mb-3">Czym się zajmuję</h2>
             <h3 className="h3 max-w-[455px] mb-5">
-              Front-end Developer and UI/UX Designer
+              Front-end Developer <br />
+              UI/UX Designer
             </h3>
             <button className="btn btn-sm">
               <Link to="work" smooth={true}>
-                See my projects
+                Moje projekty
               </Link>
             </button>
           </motion.div>
@@ -57,14 +58,14 @@ export const Services = () => {
               {services.map((service: ServicesScheme, index: number) => {
                 return (
                   <div
-                    className="border-b border-white/20 h-auto mb-[25px] flex"
+                    className="border-b border-white/20 h-auto lg:h-[150px] mb-[25px] flex"
                     key={index}
                   >
                     <div className="max-w-[476px]">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-1 lg:mb-6">
                         {service.name}
                       </h4>
-                      <p className="font-secondary leading-tight">
+                      <p className="font-secondary leading-tight mb-3">
                         {service.description}
                       </p>
                     </div>

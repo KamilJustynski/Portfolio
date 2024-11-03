@@ -25,15 +25,16 @@ export const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 justify-center items-center mt-8"
           >
-            <h2 className="h2 text-accent">About me</h2>
+            <h2 className="h2 text-accent">O mnie</h2>
             <h3 className="h3 mb-4">
-              I am a Freelance Front-end Developer with over 2 years of
-              experience.
+              Jestem freelancerem Front-end Developer z ponad 2-letnim
+              doświadczeniem.
             </h3>
             <p className="mb-6">
-              I am a freelancer specializing in customized website development
-              for each client. My approach to work is based on close cooperation
-              and understanding of the vision that each of my clients has.
+              Jestem freelancerem specjalizującym się w tworzeniu stron
+              internetowych dostosowanych do potrzeb każdego klienta. Moje
+              podejście do pracy opiera się na ścisłej współpracy i zrozumieniu
+              wizji każdego z moich klientów.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -41,8 +42,7 @@ export const About = () => {
                   {inView ? <CountUp start={0} end={2} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Project <br />
-                  Completed
+                  Projekty
                 </div>
               </div>
               <div>
@@ -50,8 +50,7 @@ export const About = () => {
                   {inView ? <CountUp start={0} end={2} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
+                  Doświadczenie <br />
                 </div>
               </div>
               <div>
@@ -59,8 +58,7 @@ export const About = () => {
                   {inView ? <CountUp start={0} end={2} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Satisfied <br />
-                  Clients
+                  Klienci
                 </div>
               </div>
             </div>

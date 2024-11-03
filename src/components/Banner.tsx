@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import { Link } from "react-scroll";
 import { GITHUB_LINK, LINKEDIN_LINK } from "../helpers";
-import banner from '../assets/banner.png'
+import banner from "../assets/banner.png";
 
 export const Banner = () => {
   return (
     <section
       id="home"
-      className="min-h-[85vh] lg:min-h-[70vh] flex items-center"
+      className="min-h-[85vh] mt-10 lg:min-h-[70vh] flex items-center"
     >
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 mb-60 lg:mb-0 lg:flex-row lg:items-center lg:gap-x-12">
@@ -29,14 +29,14 @@ export const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="mr-4 text-white">I am a</span>
+              {/* <span className="mr-4 text-white">I am a</span> */}
               <TypeAnimation
                 className="text-accent"
                 wrapper="span"
                 repeat={Infinity}
-                sequence={["Developer", 2000, "Designer", 2000]}
+                sequence={["Frontend Developer", 2000, "UI/UX Designer", 2000]}
               />
             </motion.div>
             <motion.p
@@ -46,9 +46,9 @@ export const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Creating interactive and aesthetic websites is my passion. I
-              design and implement solutions that combine functionality with
-              attractive design.
+              Tworzenie interaktywnych i estetycznych stron internetowych to
+              moja pasja. Projektuję i wdrażam rozwiązania, które łączą
+              funkcjonalność z atrakcyjnym designem.
             </motion.p>
             <motion.div
               variants={fadeIn({ direction: "right", delay: 0.6 })}
@@ -59,7 +59,7 @@ export const Banner = () => {
             >
               <button className="btn btn-lg">
                 <Link to="contact" smooth={true}>
-                  Contact me
+                  Kontakt
                 </Link>
               </button>
               <Link to="work" smooth={true} className="text-gradient btn-link">

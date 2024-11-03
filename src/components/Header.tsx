@@ -6,10 +6,10 @@ export const Header = () => {
     <header>
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <img className="w-[200px] h-[150px]" src={logo} alt="" />
+          <img className="w-[200px] h-[100px]" src={logo} alt="" />
           <button className="btn btn-sm">
             <Link to="contact" smooth={true}>
-              Work with me
+              Kontakt
             </Link>
           </button>
         </div>
