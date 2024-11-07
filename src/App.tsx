@@ -2,7 +2,7 @@ import { About } from "./components/About";
 import { Banner } from "./components/Banner";
 import { Contact } from "./components/Contact";
 import { Header } from "./components/Header";
-import { Info } from "./components/Info";
+import { Police } from "./components/Police";
 import { Nav } from "./components/Nav";
 import { Services } from "./components/Services";
 import { Work } from "./components/Work";
@@ -16,7 +16,7 @@ const App = () => (
     <Services />
     <Work />
     <Contact />
-    <Info />
+    <Police />
   </div>
 );
 
