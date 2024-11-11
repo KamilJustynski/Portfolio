@@ -4,7 +4,7 @@ export const Police = () => {
       id="info"
       className="section min-h-screen flex items-center justify-center"
     >
-      <div className="container mx-auto text-[10px] lg:text-[20px] leading-3 lg:leading-5">
+      <div className="container mx-auto text-[10px] lg:text-[12px] mb-20 leading-3 lg:leading-4">
         Polityka Prywatności
         <br />
         1. Informacje ogólne
