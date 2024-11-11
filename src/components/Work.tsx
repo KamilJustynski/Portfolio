@@ -8,7 +8,7 @@ export const Work = () => {
       id="work"
       className="section mt-16 min-h-screen flex items-center justify-center"
     >
-      <div className="container mx-auto mb-32">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10 items-center justify-center">
           <motion.div
             variants={fadeIn({ direction: "left", delay: 0.3 })}
