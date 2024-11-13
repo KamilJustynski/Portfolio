@@ -6,7 +6,7 @@ export const Work = () => {
   return (
     <section
       id="work"
-      className="section mt-16 min-h-screen flex items-center justify-center"
+      className="section mt-16 lg:mt-0 min-h-screen flex items-center justify-center"
     >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10 items-center justify-center">
@@ -14,15 +14,15 @@ export const Work = () => {
             variants={fadeIn({ direction: "left", delay: 0.3 })}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
             className="flex flex-col lg:flex-row gap-y-3 justify-between mb-10 lg:mb-0 lg:gap-x-32 items-center"
           >
-            <div className="flex flex-col flex-1 text-center lg:text-left">
-              <h2 className="h2 leading-tight text-accent text-center lg:text-left">
+            <div className="flex flex-col flex-1 lg:text-left">
+              <h2 className="h2 leading-tight text-accent  lg:text-left">
                 Moja ostatnia <br />
                 relizacja
               </h2>
-              <p className="max-w-sm mb-8 text-center lg:text-left">
+              <p className="max-w-sm mb-8  lg:text-left">
                 Mój ostatni projekt, który wykonałem. Podczas tworzenia skupiłem
                 się na dostarczonym projekcie graficznym i wymaganiach klienta.
               </p>

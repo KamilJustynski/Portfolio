@@ -8,22 +8,22 @@ export const About = () => {
     threshold: 0.5,
   });
   return (
-    <section id="about" className="section" ref={ref}>
+    <section id="about" className="section h-screen" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen justify-center items-center">
+        <div className="flex flex-col gap-y-10 lg:text-start lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-auto justify-center items-center">
           <motion.div
             variants={fadeIn({ direction: "right", delay: 0.3 })}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-about hidden lg:flex lg:mb-36 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            viewport={{ once: true }}
+            className="flex-1 bg-about hidden lg:flex lg:mb-44 bg-contain bg-no-repeat h-[600px] mix-blend-lighten bg-top"
           ></motion.div>
           <motion.div
             variants={fadeIn({ direction: "left", delay: 0.3 })}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 justify-center items-center mt-8"
+            viewport={{ once: true }}
+            className="flex-1 justify-center items-center"
           >
             <h2 className="h2 text-accent">O mnie</h2>
             <h3 className="h3 mb-4">
@@ -39,7 +39,7 @@ export const About = () => {
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={2} duration={3} /> : 2}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projekty
@@ -47,7 +47,7 @@ export const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={2} duration={3} /> : 2}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Doświadczenie <br />
@@ -55,7 +55,7 @@ export const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={2} duration={3} /> : 2}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Klienci

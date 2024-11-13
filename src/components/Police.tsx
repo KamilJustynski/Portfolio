@@ -2,7 +2,7 @@ export const Police = () => {
   return (
     <section
       id="info"
-      className="section min-h-screen flex items-center justify-center"
+      className="section text-center min-h-screen flex items-center justify-center"
     >
       <div className="container mx-auto text-[10px] lg:text-[12px] mb-20 leading-3 lg:leading-4">
         Polityka Prywatności

@@ -40,7 +40,7 @@ export const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="section min-h-screen flex items-center justify-center"
+      className="section min-h-screen flex items-center justify-center pb-20"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-x-12">
@@ -48,7 +48,7 @@ export const Contact: React.FC = () => {
             variants={fadeIn({ direction: "right", delay: 0.3 })}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
             className="flex-1 text-center lg:text-left mb-4 lg:mb-0"
           >
             <div>
@@ -66,7 +66,7 @@ export const Contact: React.FC = () => {
             variants={fadeIn({ direction: "left", delay: 0.3 })}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
             className="flex-1 border rounded-2xl  lg:mt-20 flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
           >
             <input
@@ -102,7 +102,7 @@ export const Contact: React.FC = () => {
           variants={fadeIn({ direction: "right", delay: 0.4 })}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
         >
           <Link
             to="info"

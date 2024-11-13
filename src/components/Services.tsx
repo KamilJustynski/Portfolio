@@ -25,14 +25,14 @@ const services = [
 
 export const Services = () => {
   return (
-    <section id="services" className="section">
+    <section id="services" className="section h-screen pb-24 lg:pb-0">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col mt-10  lg:text-start lg:flex-row">
           <motion.div
             variants={fadeIn({ direction: "right", delay: 0.3 })}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
             className="flex-1 lg:bg-services lg:bg-top bg-no-repeat mix-blend-lighten mb-5 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-3">Czym się zajmuję</h2>
@@ -50,7 +50,7 @@ export const Services = () => {
             variants={fadeIn({ direction: "left", delay: 0.5 })}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true }}
             className="flex-1"
           >
             <div>
