@@ -11,12 +11,12 @@ const App = () => (
   <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
     <Header />
     <Banner />
-    <Nav />
-    <About />
+    {/* <Nav /> */}
+    {/* <About /> */}
     <Services />
     <Work />
     <Contact />
-    <Police />
+    {/* <Police /> */}
   </div>
 );
 

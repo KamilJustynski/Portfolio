@@ -4,11 +4,11 @@ import { GITHUB_LINK } from "../helpers";
 
 export const Work = () => {
   return (
-    <section
-      id="work"
-      className="section mt-16 lg:mt-0 min-h-screen flex items-center justify-center"
-    >
+    <section id="work" className="lg:mb-48">
       <div className="container mx-auto">
+        <h1 className="text-accent font-bold lg:text-[50px] w-full border-b-2 border-white/50 lg:pb-5 mt-20 pb-1 text-[26px]">
+          REALIZACJE
+        </h1>
         <div className="flex flex-col lg:flex-row gap-x-10 items-center justify-center">
           <motion.div
             variants={fadeIn({ direction: "left", delay: 0.3 })}
@@ -17,21 +17,6 @@ export const Work = () => {
             viewport={{ once: true }}
             className="flex flex-col lg:flex-row gap-y-3 justify-between mb-10 lg:mb-0 lg:gap-x-32 items-center"
           >
-            <div className="flex flex-col flex-1 lg:text-left">
-              <h2 className="h2 leading-tight text-accent  lg:text-left">
-                Moja ostatnia <br />
-                relizacja
-              </h2>
-              <p className="max-w-sm mb-8  lg:text-left">
-                Mój ostatni projekt, który wykonałem. Podczas tworzenia skupiłem
-                się na dostarczonym projekcie graficznym i wymaganiach klienta.
-              </p>
-              <div className="flex justify-center lg:justify-start">
-                <a href={GITHUB_LINK} rel="noreferrer" target="_blank">
-                  <button className="btn btn-sm">Zobacz więcej</button>
-                </a>
-              </div>
-            </div>
             <a
               rel="noreferrer"
               target="_blank"

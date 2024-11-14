@@ -38,36 +38,19 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="section min-h-screen flex items-center justify-center pb-20"
-    >
-      <div className="container mx-auto max-w-6xl">
+    <section id="contact" className="lg:mb-48">
+      <div className="container mx-auto">
+        <h1 className="text-accent font-bold lg:text-[50px] w-full border-b-2 border-white/50 lg:pb-5 mt-20 pb-1 text-[26px]">
+          KONTAKT
+        </h1>
         <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-x-12">
-          <motion.div
-            variants={fadeIn({ direction: "right", delay: 0.3 })}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="flex-1 text-center lg:text-left mb-4 lg:mb-0"
-          >
-            <div>
-              <h4 className="text-xl uppercase text-accent font-medium tracking-wide">
-                Skontaktuj się
-              </h4>
-              <h2 className="hidden lg:text-[90px] lg:flex leading-none">
-                Zacznijmy wspólpracę <br />
-                już teraz!
-              </h2>
-            </div>
-          </motion.div>
           <motion.form
             onSubmit={handleSubmit}
             variants={fadeIn({ direction: "left", delay: 0.3 })}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex-1 border rounded-2xl  lg:mt-20 flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
+            className="flex-1 border rounded-2xl mt-5 lg:mt-20 flex flex-col gap-y-2 pb-2 p-6 items-center w-full max-w-md"
           >
             <input
               type="text"
@@ -98,21 +81,6 @@ export const Contact: React.FC = () => {
             <p className="text-gradient ml-2 mt-2">* Pola wymagane</p>
           </motion.form>
         </div>
-        <motion.div
-          variants={fadeIn({ direction: "right", delay: 0.4 })}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <Link
-            to="info"
-            spy={true}
-            smooth={true}
-            className="flex items-center justify-center lg:justify-start text-accent underline cursor-pointer"
-          >
-            Polityka prywatności
-          </Link>
-        </motion.div>
       </div>
     </section>
   );

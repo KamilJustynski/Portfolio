@@ -8,7 +8,7 @@ import banner from "../assets/banner.png";
 
 export const Banner = () => {
   return (
-    <section id="home" className="section h-screen pb-52 lg:pb-24">
+    <section id="home" className="pt-2 lg:pt-32">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:mb-32 lg:flex-row lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left">
@@ -17,7 +17,7 @@ export const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[80px]"
+              className="text-[35px] font-bold mb-2 leading-[0.5] lg:text-[80px]"
             >
               NextGen-Solution
             </motion.h1>
@@ -26,7 +26,7 @@ export const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-3 text-[26px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]"
             >
               <TypeAnimation
                 className="text-accent"
@@ -40,11 +40,15 @@ export const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-3 max-w-lg mx-auto lg:mx-0"
             >
-              Tworzenie interaktywnych i estetycznych stron internetowych to
-              moja pasja. Projektuję i wdrażam rozwiązania, które łączą
-              funkcjonalność z atrakcyjnym designem.
+              Tworzenie interaktywnych i estetycznych stron internetowych.
+              Projektuję i wdrażam rozwiązania, które łączą funkcjonalność z
+              atrakcyjnym designem. Moim celem jest tworzenie stron, które nie
+              tylko przyciągają wzrok, ale także zapewniają użytkownikowi
+              wygodne i płynne doświadczenie. Zawsze staram się dopasować
+              projekt do indywidualnych potrzeb klienta, dbając o to, by efekt
+              końcowy był zgodny z jego oczekiwaniami.
             </motion.p>
             <motion.div
               variants={fadeIn({ direction: "right", delay: 0.6 })}
@@ -86,7 +90,7 @@ export const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="hidden lg:flex  flex-1 max-w-[320px] lg:max-w-[400px]"
+            className="hidden lg:flex  flex-1 max-w-[320px] lg:max-w-[500px]"
           >
             <img src={banner} alt="" />
           </motion.div>
