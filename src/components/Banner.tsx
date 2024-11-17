@@ -8,7 +8,10 @@ import banner from "../assets/banner.png";
 
 export const Banner = () => {
   return (
-    <section id="home" className="pt-32 lg:pt-32 h-screen container mx-auto">
+    <section
+      id="home"
+      className="pt-32 lg:pt-32 h-screen container mx-auto overflow-hidden"
+    >
       <div className="flex flex-col gap-y-8 lg:mb-32 lg:flex-row lg:items-center lg:gap-x-12">
         <div className="flex-1 text-center font-secondary lg:text-left">
           <motion.h1

@@ -37,7 +37,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="lg:mb-48 mb-20">
+    <section id="contact" className="lg:mb-48 mb-20 overflow-hidden">
       <div className="container mx-auto">
         <h1 className="text-[#535C91] font-bold lg:text-[50px] w-full border-header lg:pb-5 mt-20 pb-1 text-[26px]">
           KONTAKT
