@@ -1,5 +1,5 @@
 interface FadeInScheme {
-  direction: string;
+  direction: "up" | "down" | "left" | "right";
   delay: number;
 }
 
