@@ -16,6 +16,7 @@ export const NavLinks: React.FC<NavLinksScheme> = ({
     <Link
       className="cursor-pointer hover:scale-105 duration-300"
       to={link}
+      offset={-80}
       activeClass="active"
       smooth={true}
       onClick={onClick}

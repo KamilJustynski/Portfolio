@@ -60,6 +60,7 @@ export const Banner = () => {
               <Link
                 to="work"
                 smooth={true}
+                offset={-80}
                 className="bg-[#535C91] flex items-center font-primary font-bold rounded-full btn-lg hover-button"
               >
                 Portfolio

@@ -27,7 +27,12 @@ export const Header = () => {
           className="bg-[#535C91] hover-button font-primary font-bold btn-sm rounded-full hidden lg:block"
           onClick={handleLinkClick}
         >
-          <Link to="contact" smooth={true} onClick={handleLinkClick}>
+          <Link
+            offset={-80}
+            to="contact"
+            smooth={true}
+            onClick={handleLinkClick}
+          >
             Kontakt
           </Link>
         </button>
@@ -62,7 +67,12 @@ export const Header = () => {
             className="bg-[#535C91] hover-button font-primary w-[150px] font-bold btn-sm rounded-full mt-5"
             onClick={handleLinkClick}
           >
-            <Link to="contact" smooth={true} onClick={handleLinkClick}>
+            <Link
+              to="contact"
+              offset={-80}
+              smooth={true}
+              onClick={handleLinkClick}
+            >
               Kontakt
             </Link>
           </button>

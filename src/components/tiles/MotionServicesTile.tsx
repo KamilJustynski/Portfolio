@@ -7,6 +7,7 @@ export interface MotionServicesTileScheme {
   description: string;
   animation: "up" | "down" | "left" | "right";
   image?: string;
+  delay: number;
 }
 
 export const MotionServicesTile: React.FC<MotionServicesTileScheme> = ({
@@ -14,16 +15,17 @@ export const MotionServicesTile: React.FC<MotionServicesTileScheme> = ({
   description,
   animation,
   image,
+  delay,
 }) => {
   return (
     <motion.div
-      variants={fadeIn({ direction: animation, delay: 0.5 })}
+      variants={fadeIn({ direction: animation, delay: delay })}
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="flex-1 text-center"
+      className="flex-1 text-center h-[550px] max-h-[550px]"
     >
-      <div className="border-box p-5 rounded-x rounded-2xl h-auto flex">
+      <div className="border-box p-5 h-full rounded-x rounded-2xl flex">
         <div className="lg:min-h-[410px]">
           <h4 className="text-[20px] mb-5 tracking-wider font-primary font-bold lg:mb-6">
             {title}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import emailjs from "@emailjs/browser";
+import { SectionHeader } from "./tiles/SectionHeader";
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState("");
@@ -39,9 +40,7 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="lg:mb-48 mb-20 overflow-hidden">
       <div className="container mx-auto">
-        <h1 className="text-[#535C91] font-bold lg:text-[50px] w-full border-header lg:pb-5 mt-20 pb-1 text-[26px]">
-          KONTAKT
-        </h1>
+        <SectionHeader text="KONTAKT" />
         <div className="flex flex-col  lg:flex-row items-center justify-between space-x-0 lg:space-x-10">
           <motion.div
             variants={fadeIn({ direction: "left", delay: 0.3 })}
