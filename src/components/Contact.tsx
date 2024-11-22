@@ -3,14 +3,17 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import emailjs from "@emailjs/browser";
 import { SectionHeader } from "./tiles/SectionHeader";
+import { Oval } from "react-loader-spinner";
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     const serviceID = "service_rh0jygn";
     const templateID = "template_6t9fb0s";
@@ -34,6 +37,9 @@ export const Contact: React.FC = () => {
       .catch((error: any) => {
         console.error("Error sending mail", error);
         alert("Failed to send email. Please try again.");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
@@ -89,9 +95,23 @@ export const Contact: React.FC = () => {
             ></textarea>
             <button
               type="submit"
-              className="font-primary bg-[#9290C3] rounded-full btn-lg hover-button"
+              className={`${
+                loading ? "" : "hover-button"
+              } font-primary bg-[#9290C3] rounded-full btn-lg`}
+              disabled={loading}
             >
-              Wyślij wiadomość
+              {loading ? (
+                <Oval
+                  visible={true}
+                  height="30"
+                  width="30"
+                  color="#070E2B"
+                  ariaLabel="oval-loading"
+                  secondaryColor="#1E2A47"
+                />
+              ) : (
+                "Wyślij wiadomość"
+              )}
             </button>
             <p className="font-primary mt-2">* Pola wymagane</p>
           </motion.form>
