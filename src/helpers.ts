@@ -45,7 +45,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Meblimar",
     image: "/meblimar.png",
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order",
+      "Strona internetowa dla firmy produkującej meble na wymiar. Stworzona pod projekt dostarczony przez klienta.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.4,
@@ -55,7 +55,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Amper",
     image: "/amper.png",
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order",
+      "Strona internetowa dla firmy zajmującej się elektryką. Stworzona pod projekt dostarczony przez klienta.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.5,
@@ -65,7 +65,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Omnifood",
     image: "/omnifood.png",
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order",
+      "Strona internetowa promująca konkretny produkt. Jest to projekt pokazowy stworzony przeze mnie.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.6,
