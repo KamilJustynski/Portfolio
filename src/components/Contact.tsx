@@ -49,7 +49,7 @@ export const Contact: React.FC = () => {
         <SectionHeader text="KONTAKT" />
         <div className="flex flex-col  lg:flex-row items-center justify-between space-x-0 lg:space-x-10">
           <motion.div
-            variants={fadeIn({ direction: "left", delay: 0.3 })}
+            variants={fadeIn({ direction: "right", delay: 0.3 })}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
