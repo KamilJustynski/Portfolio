@@ -40,14 +40,14 @@
   }
 
   .border-box {
-    @apply border-2 border-[#9290C3];
+    @apply border-2 border-[#1c7bd576];
   }
 
   .border-header {
-    @apply border-b-2 border-[#9290C3];
+    @apply border-b-2 border-black/70;
   }
 
   .border-input {
-    @apply bg-transparent border-header outline-none w-full placeholder:text-white focus:border-[#535C91] transition-all border-b-2 border-[#9290C3];
+    @apply bg-transparent border-header outline-none w-full placeholder:text-white focus:border-[#1c7bd5] transition-all border-b-2 border-[#1c7bd576];
   }
 }

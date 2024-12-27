@@ -20,7 +20,7 @@ export const AboutTile: React.FC<AboutTileScheme> = ({
       whileInView="show"
       viewport={{ once: true }}
     >
-      <p className="text-lg text-center lg:text-start text-[#fff] mb-6 mt-10">
+      <p className="text-lg text-center lg:text-start text-black/70 mb-6 mt-10">
         {text}
       </p>
     </motion.div>

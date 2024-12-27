@@ -7,7 +7,7 @@ export const Footer = () => {
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
-    <div className="flex flex-col bg-[#1E2A47] py-5">
+    <div className="flex flex-col bg-[#1C7BD5] py-5">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex flex-col text-[15px] lg:text-[20px] font-secondary">
@@ -27,7 +27,7 @@ export const Footer = () => {
           </div>
           <div>
             <img
-              className="w-[100px] h-[50px] lg:w-[300px] lg:h-[150px]"
+              className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
               src={logo}
               alt=""
             />

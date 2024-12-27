@@ -7,7 +7,7 @@ import { Services } from "./components/Services";
 import { Work } from "./components/Work";
 
 const App = () => (
-  <div className="bg-[#070F2B]">
+  <div>
     <Header />
     <Banner />
     <About />

@@ -7,7 +7,7 @@ import { fadeIn } from "../variant";
 
 export const About = () => {
   return (
-    <section id="about" className="lg:mb-48 overflow-hidden">
+    <section id="about" className="lg:mb-32 overflow-hidden">
       <div className="container mx-auto">
         <SectionHeader text="O MNIE" />
         <motion.div
@@ -15,6 +15,7 @@ export const About = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
+          className="h-auto pb-5"
         >
           {ABOUT_DATA.map((data, index) => (
             <AboutTile {...data} key={index} />
@@ -30,7 +31,7 @@ export const About = () => {
               smooth={true}
               to="contact"
               offset={-80}
-              className="bg-[#535C91] w-[150px] flex items-center font-primary font-bold rounded-full btn-lg hover-button"
+              className="bg-[#1C7BD5] w-[150px] flex items-center font-primary font-bold rounded-full btn-lg hover:scale-105 duration-150"
             >
               Kontakt
             </Link>

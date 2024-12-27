@@ -25,9 +25,9 @@ export const MotionServicesTile: React.FC<MotionServicesTileScheme> = ({
       viewport={{ once: true }}
       className="flex-1 text-center h-[550px] max-h-[550px]"
     >
-      <div className="border-box p-5 h-full rounded-x rounded-2xl flex">
+      <div className="border-box p-5 h-full rounded-2xl flex bg-[#1c7bd510]">
         <div className="lg:min-h-[410px]">
-          <h4 className="text-[20px] mb-5 tracking-wider font-primary font-bold lg:mb-6">
+          <h4 className="text-[20px] mb-5 tracking-wider font-primary font-bold text-[#1C7BD5] lg:mb-6">
             {title}
           </h4>
           {image && (
@@ -37,7 +37,7 @@ export const MotionServicesTile: React.FC<MotionServicesTileScheme> = ({
               alt="Services"
             />
           )}
-          <p className="font-secondary leading-tight mb-3">{description}</p>
+          <p className="font-secondary leading-tight text-black/70 mb-3">{description}</p>
         </div>
       </div>
     </motion.div>

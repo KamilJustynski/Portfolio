@@ -28,11 +28,11 @@ export const WorkTile: React.FC<WorkTileScheme> = ({
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="max-w-sm border-box rounded-2xl group"
+      className="max-w-sm border-box rounded-2xl group bg-[#DFEBF6]"
     >
       <div className="p-5 text-center">
         <a>
-          <h5 className="mb-2 text-2xl font-bold font-primary tracking-tight">
+          <h5 className="mb-2 text-2xl font-bold font-primary tracking-tight text-[#1C7BD5]">
             {title}
           </h5>
         </a>
@@ -41,12 +41,12 @@ export const WorkTile: React.FC<WorkTileScheme> = ({
           src={image}
           alt=""
         />
-        <p className="mb-3 font-normal">{description}</p>
+        <p className="mb-3 font-normal text-black/70">{description}</p>
         <a
           target="_blank"
           rel="noreferrer"
           href={link}
-          className="font-primary bg-[#535C91] hover-button inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-full gap-2"
+          className="font-primary bg-[#1C7BD5] hover:scale-105 duration-150 inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-full gap-2"
         >
           {button}
           <FaArrowRight />

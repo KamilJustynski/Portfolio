@@ -15,16 +15,16 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-[#1E2A47] sticky top-0 z-10">
+    <header className="bg-[#1C7BD5] sticky top-0 z-10 py-2">
       <div className="flex justify-between items-center container mx-auto">
-        <img className="w-[200px] h-[100px]" src={logo} alt="Logo" />
+        <img className="w-[80px] h-[80px]" src={logo} alt="Logo" />
         <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-10">
           {HEADER_LINKS.map((data, index) => (
             <NavLinks key={index} {...data} onClick={handleLinkClick} />
           ))}
         </div>
         <button
-          className="bg-[#535C91] hover-button font-primary font-bold btn-sm rounded-full hidden lg:block"
+          className="bg-[#fff] text-[#1C7BD5] hover-button font-primary font-bold btn-sm rounded-full hidden lg:block"
           onClick={handleLinkClick}
         >
           <Link
