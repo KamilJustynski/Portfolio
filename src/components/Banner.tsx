@@ -12,16 +12,16 @@ export const Banner = () => {
         <div className="flex flex-col gap-y-8 text-center lg:text-left">
           <div className="flex-1">
             <motion.h1
-              variants={fadeIn({ direction: "right", delay: 0.3 })}
+              variants={fadeIn({ direction: "up", delay: 0.3 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="text-[35px] font-bold mb-2 leading-[0.5] text-center text-black/70 lg:text-[80px]"
+              className="text-[45px] font-bold mb-2 leading-[0.5] text-center text-black/70 md:text-[70px] lg:text-[80px]"
             >
               NextGen-Solution
             </motion.h1>
             <motion.div
-              variants={fadeIn({ direction: "right", delay: 0.4 })}
+              variants={fadeIn({ direction: "up", delay: 0.4 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
@@ -35,11 +35,11 @@ export const Banner = () => {
               />
             </motion.div>
             <motion.p
-              variants={fadeIn({ direction: "right", delay: 0.5 })}
+              variants={fadeIn({ direction: "up", delay: 0.5 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="mb-3  mx-auto text-black/70 text-center"
+              className="mb-3  mx-auto text-black/70 text-center "
             >
               Tworzenie interaktywnych i estetycznych stron internetowych.
               Projektuję i wdrażam rozwiązania, które łączą funkcjonalność z
@@ -50,7 +50,7 @@ export const Banner = () => {
               końcowy był zgodny z jego oczekiwaniami.
             </motion.p>
             <motion.div
-              variants={fadeIn({ direction: "right", delay: 0.6 })}
+              variants={fadeIn({ direction: "up", delay: 0.6 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
@@ -60,13 +60,13 @@ export const Banner = () => {
                 to="work"
                 smooth={true}
                 offset={-80}
-                className="bg-[#1C7BD5] flex items-center font-primary font-bold rounded-full btn-lg hover-button"
+                className="bg-[#1C7BD5] flex cursor-pointer items-center font-primary font-bold rounded-full btn-lg hover:scale-105 duration-150"
               >
                 Portfolio
               </Link>
             </motion.div>
             <motion.div
-              variants={fadeIn({ direction: "right", delay: 0.7 })}
+              variants={fadeIn({ direction: "up", delay: 0.7 })}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}

@@ -14,13 +14,13 @@ export const Footer = () => {
             <p>NextGen-Solution</p>
             <a
               href="mailto:kontakt@nextgen-solution.pl"
-              className="hover:text-[#9290C3] duration-300"
+              className="hover:scale-105 duration-150"
             >
               kontakt@nextgen-solution.pl
             </a>
             <button
               onClick={toggleModal}
-              className="hover:text-[#9290C3] duration-300 text-left"
+              className="hover:scale-105 duration-150 text-left"
             >
               Polityka prywatności
             </button>
@@ -43,7 +43,7 @@ export const Footer = () => {
           onClick={toggleModal}
         >
           <div
-            className="bg-[#070E2B] w-[90%] lg:w-[600px] lg:p-8 p-3 rounded-lg shadow-lg overflow-auto"
+            className="bg-[#1C7BD5] w-[90%] lg:w-[600px] lg:p-8 p-3 rounded-lg shadow-lg overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-xl text-center font-semibold lg:mb-4">
@@ -52,7 +52,7 @@ export const Footer = () => {
             <Police />
             <div className="flex justify-end mt-4">
               <button
-                className="bg-[#535C91] hover-button text-white px-2 py-1 text-[10px] lg:px-4 lg:py-2 lg:text-[15px] rounded-full"
+                className="bg-[#fff] hover:scale-105 duration-150 text-[#1C7BD5] px-2 py-1 text-[10px] lg:w-[100px] lg:text-[15px] rounded-full"
                 onClick={toggleModal}
               >
                 Zamknij

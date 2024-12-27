@@ -31,7 +31,7 @@ export const About = () => {
               smooth={true}
               to="contact"
               offset={-80}
-              className="bg-[#1C7BD5] w-[150px] flex items-center font-primary font-bold rounded-full btn-lg hover:scale-105 duration-150"
+              className="bg-[#1C7BD5] w-[150px] flex cursor-pointer items-center font-primary font-bold rounded-full btn-lg hover:scale-105 duration-150"
             >
               Kontakt
             </Link>

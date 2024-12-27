@@ -17,14 +17,14 @@ export const Header = () => {
   return (
     <header className="bg-[#1C7BD5] sticky top-0 z-10 py-2">
       <div className="flex justify-between items-center container mx-auto">
-        <img className="w-[80px] h-[80px]" src={logo} alt="Logo" />
+        <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px]" src={logo} alt="Logo" />
         <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-10">
           {HEADER_LINKS.map((data, index) => (
             <NavLinks key={index} {...data} onClick={handleLinkClick} />
           ))}
         </div>
         <button
-          className="bg-[#fff] text-[#1C7BD5] hover-button font-primary font-bold btn-sm rounded-full hidden lg:block"
+          className="bg-[#fff] text-[#1C7BD5] hover:scale-105 duration-150 font-primary font-bold btn-sm rounded-full hidden lg:block"
           onClick={handleLinkClick}
         >
           <Link
@@ -50,7 +50,7 @@ export const Header = () => {
         ></div>
       )}
       <div
-        className={`lg:hidden fixed top-0 right-0 w-[250px] h-full bg-[#070F2B] transition-transform duration-300 z-20 ${
+        className={`lg:hidden fixed top-0 right-0 w-[250px] h-full bg-[#1C7BD5] transition-transform duration-300 z-20 ${
           isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"
         }`}
       >
@@ -64,7 +64,7 @@ export const Header = () => {
             <NavLinks key={index} {...data} onClick={handleLinkClick} />
           ))}
           <button
-            className="bg-[#535C91] hover-button font-primary w-[150px] font-bold btn-sm rounded-full mt-5"
+            className="bg-[#fff] text-[#1C7BD5] font-primary w-[150px] font-bold btn-sm rounded-full mt-5"
             onClick={handleLinkClick}
           >
             <Link
