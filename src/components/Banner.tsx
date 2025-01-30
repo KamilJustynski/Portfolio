@@ -7,7 +7,7 @@ import { GITHUB_LINK, LINKEDIN_LINK } from "../helpers";
 
 export const Banner = () => {
   return (
-    <section id="home" className="h-auto py-20 overflow-hidden bg-[#EDF2F7]">
+    <section id="home" className="h-auto py-16 overflow-hidden bg-[#EDF2F7]">
       <div className="container mx-auto h-full flex justify-center items-center">
         <div className="flex flex-col gap-y-8 text-center lg:text-left">
           <div className="flex-1">
