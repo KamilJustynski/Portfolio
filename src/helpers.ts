@@ -42,18 +42,18 @@ export const SERVICES_DATA: MotionServicesTileScheme[] = [
 
 export const WORK_DATA: WorkTileScheme[] = [
   {
-    title: "Meblimar",
-    image: "/meblimar.png",
+    title: "Studio Daj-Głos",
+    image: "/dajglos.png",
     description:
       "Strona internetowa dla firmy produkującej meble na wymiar. Stworzona pod projekt dostarczony przez klienta.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.4,
-    link: "https://www.meblimar.com/",
+    link: "https://www.dajglos.com/",
   },
   {
-    title: "Amper",
-    image: "/amper.png",
+    title: "Meblimar",
+    image: "/meblimar.png",
     description:
       "Strona internetowa dla firmy zajmującej się elektryką. Stworzona pod projekt dostarczony przez klienta.",
     button: "Zobacz projekt",
@@ -62,14 +62,14 @@ export const WORK_DATA: WorkTileScheme[] = [
     link: "https://www.pomiaryit.pl/",
   },
   {
-    title: "Omnifood",
-    image: "/omnifood.png",
+    title: "Amper",
+    image: "/amper.png",
     description:
       "Strona internetowa promująca konkretny produkt. Jest to projekt pokazowy stworzony przeze mnie.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.6,
-    link: "https://kamiljustynski.github.io/Omnifood-Page/",
+    link: "https://www.pomiaryit.pl/",
   },
 ];
 
