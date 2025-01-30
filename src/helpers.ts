@@ -45,7 +45,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Studio Daj-Głos",
     image: "/dajglos.png",
     description:
-      "Strona internetowa dla firmy produkującej meble na wymiar. Stworzona pod projekt dostarczony przez klienta.",
+      "Strona internetowa dla studia podcastowego Daj-Głos. Wykonana na podstawie dostarczonego projektu graficznego.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.4,
@@ -55,7 +55,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Meblimar",
     image: "/meblimar.png",
     description:
-      "Strona internetowa dla firmy zajmującej się elektryką. Stworzona pod projekt dostarczony przez klienta.",
+    "Strona internetowa dla firmy produkującej meble na wymiar. Wykonana na podstawie dostarczonego projektu graficznego.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.5,
@@ -65,7 +65,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Amper",
     image: "/amper.png",
     description:
-      "Strona internetowa promująca konkretny produkt. Jest to projekt pokazowy stworzony przeze mnie.",
+      "Strona internetowa dla firmy zajmującej się elektryką. Wykonana na podstawie dostarczonego projektu graficznego.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.6,

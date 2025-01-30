@@ -28,7 +28,7 @@ export const WorkTile: React.FC<WorkTileScheme> = ({
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="max-w-sm border-box rounded-2xl group bg-[#DFEBF6]"
+      className="lg:w-[500px] lg:h-[450px] border-box rounded-2xl group bg-[#DFEBF6]"
     >
       <div className="p-5 text-center">
         
