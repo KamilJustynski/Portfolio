@@ -31,11 +31,11 @@ export const WorkTile: React.FC<WorkTileScheme> = ({
       className="max-w-sm border-box rounded-2xl group bg-[#DFEBF6]"
     >
       <div className="p-5 text-center">
-        <a>
+        
           <h5 className="mb-2 text-2xl font-bold font-primary tracking-tight text-[#1C7BD5]">
             {title}
           </h5>
-        </a>
+        
         <img
           className="rounded-lg group-hover:scale-105 duration-300 mx-auto mt-5 mb-5"
           src={image}
