@@ -45,7 +45,7 @@ export const WORK_DATA: WorkTileScheme[] = [
     title: "Studio Daj-Głos",
     image: "/dajglos.png",
     description:
-      "Strona internetowa dla studia podcastowego Daj-Głos. Wykonana na podstawie dostarczonego projektu graficznego.",
+      "Strona internetowa dla Studia Podcastowego Daj-Głos. Wykonana na podstawie dostarczonego projektu graficznego.",
     button: "Zobacz projekt",
     animation: "up",
     delay: 0.4,
